@@ -1,0 +1,135 @@
+{
+  "title": "Matrix Interface",
+  "configuration": {
+    "widgets": {
+      "2723dab7-bcbf-aec9-3aae-ad0000785bf8": {
+        "isSystemType": true,
+        "bundleAlias": "control_widgets",
+        "typeAlias": "knob_control",
+        "type": "rpc",
+        "title": "New widget",
+        "sizeX": 6,
+        "sizeY": 6,
+        "config": {
+          "targetDeviceAliases": [],
+          "showTitle": false,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "requestTimeout": 500,
+            "maxValue": 100,
+            "initialValue": 50,
+            "minValue": 0,
+            "title": "Speed Control",
+            "getValueMethod": "getValue",
+            "setValueMethod": "setValue"
+          },
+          "title": "Speed Control",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "decimals": 2,
+          "datasources": [],
+          "targetDeviceAliasIds": [
+            "2319b0b8-8b77-4ca6-22a4-8a7d088db6ea"
+          ]
+        },
+        "id": "2723dab7-bcbf-aec9-3aae-ad0000785bf8"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Matrix Interface",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "2723dab7-bcbf-aec9-3aae-ad0000785bf8": {
+                "sizeX": 6,
+                "sizeY": 6,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 12,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          },
+          "right": {
+            "widgets": {},
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 12,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "2319b0b8-8b77-4ca6-22a4-8a7d088db6ea": {
+        "id": "2319b0b8-8b77-4ca6-22a4-8a7d088db6ea",
+        "alias": "Matrix",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": false,
+          "entityType": "CUSTOMER",
+          "entityList": [
+            "7fb71a40-0a92-11e9-8f97-150ca3b048c1"
+          ]
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1545912951541,
+          "endTimeMs": 1545999351541
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Matrix Interface"
+}
